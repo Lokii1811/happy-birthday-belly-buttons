@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <title>Barbie x Covet Fashion</title>
+</head>
+
+<body>
+    <main id="app">
+
+        <!-- SCREEN 1: INTRO -->
+        <section id="intro" class="screen intro-screen">
+            <p class="eyebrow">for the girl who loves Barbie Princess Charm School and Covet Fashion</p>
+
+            <h1>BARBIE <span>×</span> COVET FASHION</h1>
+
+            <div class="intro-photo heart-photo">
+                <img src="./tiny_rutu.jpg" alt="Birthday girl">
+            </div>
+
+            <p class="subtitle">
+                Every fashion icon needs the perfect finishing touch.
+            </p>
+
+            <button id="play-button" class="pink-button">
+                PLAY ♡
+            </button>
+        </section>
+
+        <!-- SCREEN 2: RIBBON GAME -->
+        <section id="game-screen" class="screen game-screen hidden">
+            <p class="eyebrow">THE FINAL TOUCH</p>
+
+            <h1>Complete the Look <span>🎀</span></h1>
+
+            <p class="subtitle">
+                Every Barbie needs her signature bow.
+                Can you get it just right?
+            </p>
+
+            <div id="game-stage" class="game-stage">
+                <img
+                    id="girl"
+                    src="./tiny_rutu.jpg"
+                    alt="Place the ribbon on her head"
+                >
+
+                <img
+                    id="ribbon"
+                    src="./ribbon_nobg.png"
+                    alt="Draggable ribbon"
+                    draggable="false"
+                >
+            </div>
+
+            <p id="game-message" aria-live="polite">
+                tiny rutu looks cutee, make her cuter with a <span>🎀</span>
+            </p>
+
+            <button id="ribbon-button" class="pink-button">
+                GET THE BOW
+            </button>
+        </section>
+
+        <!-- SCREEN 3: BIRTHDAY REVEAL -->
+        <section id="reveal" class="screen reveal-screen hidden">
+
+            <h1 class="birthday-heading">
+                HAPPY BIRTHDAY <span>RUTU!</span>
+            </h1>
+
+            <div class="reveal-layout">
+
+                <!-- PERSONAL LETTER -->
+                <article class="letter">
+                    <p class="letter-intro">My Dear Belly Buttons,</p>
+
+                    <div id="birthday-letter">
+
+                        <p><strong>HAPPY BIRTHDAY</strong></p>
+
+                        <p><strong>I LOVE YOU</strong></p>
+
+                        
+
+                        
+                    </div>
+                    <div class="lame-poem">
+                        <p>lame poem for you sweetheart</p>
+
+                        <p><strong>
+                            roses are red<br>
+                            violets are blue<br>
+                            my dear belly buttons<br>
+                            mai aapse pyaar karta hoon
+                        </strong></p>
+                        <p>to</p>
+
+                        <strong><p lang="ur" dir="rtl">رتبہ</p></strong>
+                    </div>
+                    <p class="letter-signoff"><p>with love<br><strong>Loki</strong></p>♡</p>
+                </article>
+
+                <!-- FINAL PHOTO -->
+                <div class="final-photo">
+                    <img
+                        src="./tiny_rutu.jpg"
+                        alt="Rutu on her birthday"
+                    >
+
+                    <img
+                        id="final-ribbon"
+                        src="./ribbon_nobg.png"
+                        alt=""
+                    >
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./game.js"></script>
+</body>
+</html>
